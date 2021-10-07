@@ -6,8 +6,51 @@
         xmlns:local="clr-namespace:Estaciones"
         mc:Ignorable="d"
         Icon="assets/sun.ico"
-        Title="Las 4 estaciones" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Las 4 estaciones"
+        Height="450"
+        Width="800">
+
+    <DockPanel Background="#FFA1DEEC">
+        <TextBlock DockPanel.Dock="Top"
+                   Text="Las 4 estaciones"
+                   FontFamily="MV Boli"
+                   FontSize="36"
+                   TextAlignment="Center"
+                   FontWeight="Bold">
+            <TextBlock.Effect>
+                <DropShadowEffect />
+            </TextBlock.Effect>
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1"
+                                     StartPoint="0.5,0">
+                    <GradientStop Color="#FFF100A5"
+                                  Offset="0.011" />
+                    <GradientStop Color="#FF65F372"
+                                  Offset="1" />
+                </LinearGradientBrush>
+            </TextBlock.Foreground></TextBlock>
+        <UniformGrid Margin="5"
+                     DockPanel.Dock="Bottom">
+            <ScrollViewer  Margin="10"
+                           VerticalScrollBarVisibility="Auto"
+                           HorizontalScrollBarVisibility="Auto">
+                <Image Source="assets/invierno.jpg"></Image>
+            </ScrollViewer>
+            <ScrollViewer Margin="10"
+                          VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Auto">
+                <Image Source="assets/primavera.jpg"></Image>
+            </ScrollViewer>
+            <ScrollViewer Margin="10"
+                          VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Auto">
+                <Image Source="assets/verano.jpg"></Image>
+            </ScrollViewer>
+            <ScrollViewer Margin="10"
+                          VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Auto">
+                <Image Source="assets/otoño.jpg"></Image>
+            </ScrollViewer>
+        </UniformGrid>
+    </DockPanel>
 </Window>
